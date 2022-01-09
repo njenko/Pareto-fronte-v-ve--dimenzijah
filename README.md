@@ -1,1 +1,1 @@
-# Pareto-fronte-v-ve--dimenzijah
+# Pareto-fronte-v-vec-dimenzijah

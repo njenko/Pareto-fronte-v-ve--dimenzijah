@@ -63,7 +63,7 @@ def random_krogla(stevilo_tock, d, radij=1):
     return mnozica_tock
 
 
-def random_kocka(stevilo_tock,d,a=1): # a stranica kocke, d dimenzija prostora
+def random_kocka(stevilo_tock, d, a=1): # a stranica kocke, d dimenzija prostora
     mnozica_tock = set()
     for i in range(stevilo_tock):
         rand_smer = random.uniform(low=0, high=a, size=d)
@@ -75,16 +75,16 @@ def random_kocka(stevilo_tock,d,a=1): # a stranica kocke, d dimenzija prostora
 # EKSPERIMENTALNI DEL
 #===============================================================================
 
-testne_tocke50_1 = random_krogla(50, 2)
-testne_tocke50_2 = random_krogla(50, 2)
-testne_tocke50_3 = random_krogla(50, 2)
-testne_tocke50_4 = random_krogla(50, 2)
-testne_tocke50_5 = random_krogla(50, 2)
-testne_tocke50_6 = random_krogla(50, 2)
-testne_tocke50_7 = random_krogla(50, 2)
-testne_tocke50_8 = random_krogla(50, 2)
-testne_tocke50_9 = random_krogla(50, 2)
-testne_tocke50_10 = random_krogla(50, 2)
+testne_tocke50_1 = random_krogla(200, 5)
+testne_tocke50_2 = random_krogla(200, 5)
+testne_tocke50_3 = random_krogla(200, 5)
+testne_tocke50_4 = random_krogla(200, 5)
+testne_tocke50_5 = random_krogla(200, 5)
+testne_tocke50_6 = random_krogla(200, 5)
+testne_tocke50_7 = random_krogla(200, 5)
+testne_tocke50_8 = random_krogla(200, 5)
+testne_tocke50_9 = random_krogla(200, 5)
+testne_tocke50_10 = random_krogla(200, 5)
 
 izracun_n_pareto_front(testne_tocke50_1, 5)
 izracun_n_pareto_front(testne_tocke50_2, 5)

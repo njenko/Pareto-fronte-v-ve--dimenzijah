@@ -1,5 +1,9 @@
 from numpy import random, linalg
 
+#=====================================================================================
+# FUNKCIJE ZA RAČUNANJE PARETO FRONT
+#=====================================================================================
+
 def dominira(a, b):
     return sum([a[x] >= b[x] for x in range(len(b))]) == len(b) # vrne true, če točka a dominira točko b
 
@@ -44,6 +48,10 @@ def izracun_n_pareto_front(mnozica, n): # 2., 3., 4., ... pareto fronte izračun
         return pareto, izracun_n_pareto_front(dom, n-1)
 
 
+#=====================================================================================
+# GENERIRANJE PODATKOV
+#=====================================================================================
+
 def random_krogla(stevilo_tock, d, radij=1):
     mnozica_tock = set()
     for i in range(stevilo_tock):    
@@ -54,17 +62,20 @@ def random_krogla(stevilo_tock, d, radij=1):
         mnozica_tock.add(tocka)
     return mnozica_tock
 
+#=====================================================================================
+# EKSPERIMENTALNI DEL
+#=====================================================================================
 
-testne_tocke50_1 = random_krogla(50, 3)
-testne_tocke50_2 = random_krogla(50, 3)
-testne_tocke50_3 = random_krogla(50, 3)
-testne_tocke50_4 = random_krogla(50, 3)
-testne_tocke50_5 = random_krogla(50, 3)
-testne_tocke50_6 = random_krogla(50, 3)
-testne_tocke50_7 = random_krogla(50, 3)
-testne_tocke50_8 = random_krogla(50, 3)
-testne_tocke50_9 = random_krogla(50, 3)
-testne_tocke50_10 = random_krogla(50, 3)
+testne_tocke50_1 = random_krogla(200, 3)
+testne_tocke50_2 = random_krogla(200, 3)
+testne_tocke50_3 = random_krogla(200, 3)
+testne_tocke50_4 = random_krogla(200, 3)
+testne_tocke50_5 = random_krogla(200, 3)
+testne_tocke50_6 = random_krogla(200, 3)
+testne_tocke50_7 = random_krogla(200, 3)
+testne_tocke50_8 = random_krogla(200, 3)
+testne_tocke50_9 = random_krogla(200, 3)
+testne_tocke50_10 = random_krogla(200, 3)
 
 izracun_n_pareto_front(testne_tocke50_1, 5)
 izracun_n_pareto_front(testne_tocke50_2, 5)

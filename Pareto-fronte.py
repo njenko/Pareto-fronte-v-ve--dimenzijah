@@ -62,6 +62,15 @@ def random_krogla(stevilo_tock, d, radij=1):
         mnozica_tock.add(tocka)
     return mnozica_tock
 
+
+def random_kocka(stevilo_tock,d,a=1): # a stranica kocke, d dimenzija prostora
+    mnozica_tock = set()
+    for i in range(stevilo_tock):
+        rand_smer = random.uniform(low=0, high=a, size=d)
+        tocka = tuple(rand_smer)
+        mnozica_tock.add(tocka)
+    return mnozica_tock
+
 #===============================================================================
 # EKSPERIMENTALNI DEL
 #===============================================================================

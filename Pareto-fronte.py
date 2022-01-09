@@ -54,13 +54,25 @@ def random_krogla(stevilo_tock, d, radij=1):
         mnozica_tock.add(tocka)
     return mnozica_tock
 
-#testna_mnozica1 = {(13, 4, -5), (32, 7, 587), (3, 8, 13), (24, -841, -5), (-98, 8, 0), (234, 34, 2), (3, 4, 654), (3, 54, 24)}
-#print(izracun_n_pareto_front(testna_mnozica, 2))
 
-testna_mnozica = random_krogla(50, 3)
+testne_tocke50_1 = random_krogla(50, 3)
+testne_tocke50_2 = random_krogla(50, 3)
+testne_tocke50_3 = random_krogla(50, 3)
+testne_tocke50_4 = random_krogla(50, 3)
+testne_tocke50_5 = random_krogla(50, 3)
+testne_tocke50_6 = random_krogla(50, 3)
+testne_tocke50_7 = random_krogla(50, 3)
+testne_tocke50_8 = random_krogla(50, 3)
+testne_tocke50_9 = random_krogla(50, 3)
+testne_tocke50_10 = random_krogla(50, 3)
 
-a = izracun_pareto_fronte(testna_mnozica)
-
-print(a)
-
-print(testna_mnozica)
+izracun_n_pareto_front(testne_tocke50_1, 5)
+izracun_n_pareto_front(testne_tocke50_2, 5)
+izracun_n_pareto_front(testne_tocke50_3, 5)
+izracun_n_pareto_front(testne_tocke50_4, 5)
+izracun_n_pareto_front(testne_tocke50_5, 5)
+izracun_n_pareto_front(testne_tocke50_6, 5)
+izracun_n_pareto_front(testne_tocke50_7, 5)
+izracun_n_pareto_front(testne_tocke50_8, 5)
+izracun_n_pareto_front(testne_tocke50_9, 5)
+izracun_n_pareto_front(testne_tocke50_10, 5)

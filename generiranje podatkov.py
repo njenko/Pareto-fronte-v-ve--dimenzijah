@@ -12,3 +12,4 @@ def random_ball(num_points, dimension, radius=1):
 
 krogla = set(random_ball(5, 3))
 print(krogla)
+

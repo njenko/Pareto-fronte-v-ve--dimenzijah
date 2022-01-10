@@ -1,7 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1641810015 "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.tex" "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.pdf" "Porocilo" 1641810016
-  "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.aux" 1641810016 892 373e0d69be1f6a589a72ede1f1628e77 ""
-  "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.tex" 1641810014 6938 2e899a8340aca94134b0064252c5a687 ""
+["pdflatex"] 1641810980 "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.tex" "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.pdf" "Porocilo" 1641810980
+  "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.aux" 1641810980 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.tex" 1641810978 7354 a5213d3cc82598e6090f226516111b71 ""
+  "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Slike/Slika_pareto_fronta.png" 0 -1 0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -63,11 +64,12 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1571577906 4259637 2e4aa08b92b5fc463b88db57a4ef7a93 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "Porocilo.aux" 1641810016 892 373e0d69be1f6a589a72ede1f1628e77 "pdflatex"
-  "Porocilo.tex" 1641810014 6938 2e899a8340aca94134b0064252c5a687 ""
+  "Porocilo.aux" 0 -1 0 "pdflatex"
+  "Porocilo.tex" 1641810978 7354 a5213d3cc82598e6090f226516111b71 ""
+  "Slike/Slika_pareto_fronta.png" 0 -1 0 ""
   (generated)
-  "Porocilo.log"
   "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.log"
-  "Porocilo.pdf"
   "Porocilo.aux"
   "/Users/nejcjenko/Documents/GitHub/Pareto-fronte-v-vec-dimenzijah/Porocilo.pdf"
+  "Porocilo.pdf"
+  "Porocilo.log"

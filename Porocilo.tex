@@ -26,17 +26,25 @@
 \section{Uvod}
 V projektni nalogi si bova ogledala Pareto fronte na d-dimenzionalnih množicah. To pomeni, da bova na podani množici poiskala točke, ki so nedominirane. Celotna množica nedominiranih točk je Pareto fronta.  Za opazovane množice točk bova vzela poljubne točke v d-dimenzionalnih kroglah in hiperkockah. Analizirala bova, število točk v Pareto fronti, glede na dimenzijo prostora d. Poleg prve Pareto fronte, bova želela izračunati še drugo, tretjo in tako naprej.
 
-\section{Definicija Pareto fronte}
-${\rm \textbf{Definicija 1}}$ Naj bo S prostor definiran z množico n dimenzij $\{d_{1},d_{2}\dots,d_{n}\}$ in D podmnožica množice S. Naj bo $p \in D$, podana z $p = (p_{1},p_{2},\dots,p_{n})$, kjer je $p_{i}$ vrednost v dimenziji $d_{i}$. Točka $p \in D$ \textbf{dominira} točko $q \in D$ na podprostoru $S'\subseteq S$, če v vsaki dimenziji $d_{i} \in S'$ velja $p_{i} \le q_{i}$ in v vsaj eni dimenziji $d_{j} \in S'$, $p_{j} < q_{j}$. 
-\underline{\textbf{Pareto fronta}} prostora $S' \subseteq S$ je množica točk $D' \subseteq D,$ ki niso dominirane z nobeno točko v prostoru $S'$. \break
+
+\subsection{Definicija Pareto fronte}
+${\rm \textbf{Definicija 1}}$ Naj bo S prostor definiran z množico n dimenzij $\{d_{1},d_{2}\dots,d_{n}\}$ in D podmnožica množice S. Naj bo $p \in D$, podana z $p = (p_{1},p_{2},\dots,p_{n})$, kjer je $p_{i}$ vrednost v dimenziji $d_{i}$. Točka $p \in D$ \textbf{dominira} točko $q \in D$ na podprostoru $S'\subseteq S$, če v vsaki dimenziji $d_{i} \in S'$ velja $p_{i} \le q_{i}$ in v vsaj eni dimenziji $d_{j} \in S'$, $p_{j} < q_{j}$. \break
+\underline{\textbf{Pareto fronta}}(oz. 1. Pareto fronta) prostora $S' \subseteq S$ je množica točk $D' \subseteq D,$ ki niso dominirane z nobeno točko v prostoru $S'$. Če točke, ki so v 1. Pareto fornti odstranimo iz mnozice dobimo novo množico. Pareto fronto te množice imenujemo \textbf{2. Pareto fronta}. Ta postopek lahko n-krat ponovimo, da dobimo \textbf{n-to Pareto fronto}.
+(Od tu naprej uporablajmo izraz \i{globlja} ko primerjamo dve Pareto fronti na isti množici. Primer: i-ta Pareto fronta je globlja od j-te Pareto fronta, če velja $i > j$.)
 \break
 
 ${\rm \textbf{Primer Pareto fronte v dveh dimenzijah}}$
 
- \begin{figure}[htbp]
+\begin{figure}[htbp]
 \includegraphics[width=4cm]{Slike/Slika_pareto_fronta.png}
 \centering
 \end{figure}
+
+\subsection{Hipoteza}
+\begin{enumerate}
+    \item Predvidevamo, da, če povečujemo dimenzijo, se bo s tem zmanjševalo število točk v globljih Pareto frontah.
+    \item Predvidevamo, da bodo imele množice, ki imajo možnost za večje odstopanje v pozitivni smeri vseh oz. več koordinat (npr. kocka napram krogli), v 1. Pareto fronti manjše število točk.
+\end{enumerate}
 
 \section{Potek dela}
 Za generiranje najinega problema sva uporabila programski jezik Python. Glavni vhodni podatek problema je poljubna množica točk, ki jo lahko ročno izberemo sami, ali pa jo dobimo s pomočjo ene od funkcij, ki sva jih zapisala za generiranje le teh. Zapisala sva funkcijo za izračun Pareto fronte, za katero sva dodatno definirala še eno krajšo funkcijo, kot bomo videli v nadaljevanju. Poleg tega sva zapisala funkciji za generiranje točk v d- dimenzionalni krogli in hiperkocki.
@@ -135,10 +143,24 @@ def random_kocka(stevilo_tock,d,a=1):
 
 
 \section{Eksperimentalni Del}
-Ko imamo napisane funkcije za generiranje podatkov in njihovo obdelavo, lahko začnemo z eksperimentalnim delom. 
-V prvem delu bomo za svoje podatke generirali 2, 3, 4 in 5 dimenzionalne krogle in primerjali število točk v prvih petih pareto forntah. Za vsako dimenzijo bomo opazovali množice po 50, 100 in 200 točk. Za vsako od teh kombinacij bomo poskus ponovili desetkrat. 
-\
 
+Ko imamo napisane funkcije za generiranje podatkov in njihovo obdelavo, lahko začnemo z eksperimentalnim delom. Naše eksperimente bomo ločili na dva dela. V prvem delu si bomo pogledali vpliv višanja dimenzije prostora. V drugem delu pa bomo v isti dimenziji primerjali rezultate, če testne točke generiramo na različnih območjih (enotska krogla in enotska kocka). Vsi konkretni podatki so dostopni v priloženem .xlsx dokumentu.
+
+\subsection{Prvi Del - Vpliv dimenzije}
+V prvem delu bomo za svoje podatke generirali 2, 3, 4 in 5 dimenzionalne krogle in primerjali število točk v prvih petih Pareto forntah. Za vsako dimenzijo bomo opazovali množice po 50, 100 in 200 točk. Za vsako od teh kombinacij bomo poskus ponovili desetkrat. V spodnjih grafih so prikazana povprečna števila točk v vsaki Pareto fronti.
+
+\break
+\begin{figure}[htbp]
+    \includegraphics[width=130mm]{Slike/Graf1.png}
+\centering
+\end{figure}
+
+Kot lahko vidimo iz zgornjih grafov, se z višanjem dimencije delež točk v manj globokih Pareto forntah povečuje. Pri dvodimenzionalni krogli imamo v prvih petih Pareto frontah približno enako točk. V naših poskusih jih je v 1. Pareto fronti celo manj točk kot v 5. Pareto fronti. Pričakujemo lahko, da bi z večanjem števila poskusov, ne glede na število generiranih točk, vse krivulje na grafu postajale vedno bolj linearne. Pri povečanju dimenzije na 3 že opazimo trend, da maksimalno število točk dobimo v 2. oz 3. Pareto fronti. To predvidevamo, da je posledica tega, da v 1. Pareto fronti zajamemo najbolj izstopajočje točke, ki dominirajo velik delež ostalih točk. Pri 2. in 3. pareto fronti pa opazujemo že bolj "zglajeno" množico, zato v pareto fronti dobimo več točk. V treh dimenzijah začenjamo opažati tudi vpliv števila generiranih točk. Z več generiranimi točkami se spremembe kažejo bolj intenzivno. Ko dimenzijo povečamo na 4 ali 5 se nam pokaže očiten maksimum števila točk v 2. Pareto fronti. v teh primerih skoraj vse točke množice zajamemo že v prvih treh Pareto frontah. Do tega po našem mnenju pride, ker imamo v več dimenzijah več kriterijov, po katerih mora biti točka dominirana, da izpade iz Pareto fronte. \break
+\texttt{Opazimo lahko, da eksperiment potrjuje našo prvo hipotezo.}
+
+\subsection{Drugi del - Vpliv oblike množice}
+
+\subsection{Časovna zahtevnost}
 
 
 \end{document}

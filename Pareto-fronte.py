@@ -81,7 +81,8 @@ def random_kocka(stevilo_tock, d, a=1): # a stranica kocke, d dimenzija prostora
 # default je nastavljena enotska krogla in enotska kocka (radij=1 oz. stranica=1)
 
 # Primer:
-testne_tocke = random_krogla(500, 3)
+testne_tocke1 = random_krogla(200, 3)
+testne_tocke2 = random_kocka(200, 3)
 
 # Nato lahko na tej množici uporabimo funkcijo izracun_pareto_fronte, ki nam vrne 
 # dvojec 1. pareto fronto in pa množice vseh dominiranih točk, ali pa 
@@ -89,9 +90,48 @@ testne_tocke = random_krogla(500, 3)
 # globine, kjer smo porabili vse točke.
 
 #Primer:
-(pareto, dominirane) = izracun_pareto_fronte(testne_tocke)
+(pareto, dominirane) = izracun_pareto_fronte(testne_tocke1)
 
-pareto_fronte_do_globine_5 = izracun_n_pareto_front(testne_tocke, 5)
+#pareto_fronte_do_globine_5 = izracun_n_pareto_front(testne_tocke2, 5)
 
-print(pareto)
-print(dominirane)
+kocka1 = random_kocka(500, 5)
+kocka2 = random_kocka(500, 5)
+kocka3 = random_kocka(500, 5)
+kocka4 = random_kocka(500, 5)
+kocka5 = random_kocka(500, 5)
+kocka6 = random_kocka(500, 5)
+kocka7 = random_kocka(500, 5)
+kocka8 = random_kocka(500, 5)
+kocka9 = random_kocka(500, 5)
+kocka10 = random_kocka(500, 5)
+kocka11 = random_kocka(500, 5)
+kocka12 = random_kocka(500, 5)
+kocka13 = random_kocka(500, 5)
+kocka14 = random_kocka(500, 5)
+kocka15 = random_kocka(500, 5)
+kocka16 = random_kocka(500, 5)
+kocka17 = random_kocka(500, 5)
+kocka18 = random_kocka(500, 5)
+kocka19 = random_kocka(500, 5)
+kocka20 = random_kocka(500, 5)
+
+izracun_n_pareto_front(kocka1, 5)
+izracun_n_pareto_front(kocka2, 5)
+izracun_n_pareto_front(kocka3, 5)
+izracun_n_pareto_front(kocka4, 5)
+izracun_n_pareto_front(kocka5, 5)
+izracun_n_pareto_front(kocka6, 5)
+izracun_n_pareto_front(kocka7, 5)
+izracun_n_pareto_front(kocka8, 5)
+izracun_n_pareto_front(kocka9, 5)
+izracun_n_pareto_front(kocka10, 5)
+izracun_n_pareto_front(kocka11, 5)
+izracun_n_pareto_front(kocka12, 5)
+izracun_n_pareto_front(kocka13, 5)
+izracun_n_pareto_front(kocka14, 5)
+izracun_n_pareto_front(kocka15, 5)
+izracun_n_pareto_front(kocka16, 5)
+izracun_n_pareto_front(kocka17, 5)
+izracun_n_pareto_front(kocka18, 5)
+izracun_n_pareto_front(kocka19, 5)
+izracun_n_pareto_front(kocka20, 5)

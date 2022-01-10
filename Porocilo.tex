@@ -28,10 +28,10 @@ V projektni nalogi si bova ogledala Pareto fronte na d-dimenzionalnih množicah.
 
 
 \subsection{Definicija Pareto fronte}
-${\rm \textbf{Definicija 1}}$ Naj bo S prostor definiran z množico n dimenzij $\{d_{1},d_{2}\dots,d_{n}\}$ in D podmnožica množice S. Naj bo $p \in D$, podana z $p = (p_{1},p_{2},\dots,p_{n})$, kjer je $p_{i}$ vrednost v dimenziji $d_{i}$. Točka $p \in D$ \textbf{dominira} točko $q \in D$ na podprostoru $S'\subseteq S$, če v vsaki dimenziji $d_{i} \in S'$ velja $p_{i} \le q_{i}$ in v vsaj eni dimenziji $d_{j} \in S'$, $p_{j} < q_{j}$. \break
+${\rm \textbf{Definicija 1}}$ Naj bo S prostor definiran z množico n dimenzij $\{d_{1},d_{2}\dots,d_{n}\}$ in D podmnožica množice S. Naj bo $p \in D$, podana z $p = (p_{1},p_{2},\dots,p_{n})$, kjer je $p_{i}$ vrednost v dimenziji $d_{i}$. Točka $p \in D$ \textbf{dominira} točko $q \in D$ na podprostoru $S'\subseteq S$, če v vsaki dimenziji $d_{i} \in S'$ velja $p_{i} \le q_{i}$ in v vsaj eni dimenziji $d_{j} \in S'$, $p_{j} < q_{j}$. \\
 \underline{\textbf{Pareto fronta}}(oz. 1. Pareto fronta) prostora $S' \subseteq S$ je množica točk $D' \subseteq D,$ ki niso dominirane z nobeno točko v prostoru $S'$. Če točke, ki so v 1. Pareto fornti odstranimo iz mnozice dobimo novo množico. Pareto fronto te množice imenujemo \textbf{2. Pareto fronta}. Ta postopek lahko n-krat ponovimo, da dobimo \textbf{n-to Pareto fronto}.
 (Od tu naprej uporablajmo izraz \i{globlja} ko primerjamo dve Pareto fronti na isti množici. Primer: i-ta Pareto fronta je globlja od j-te Pareto fronta, če velja $i > j$.)
-\break
+\\
 
 ${\rm \textbf{Primer Pareto fronte v dveh dimenzijah}}$
 
@@ -155,12 +155,36 @@ V prvem delu bomo za svoje podatke generirali 2, 3, 4 in 5 dimenzionalne krogle 
 \centering
 \end{figure}
 
-Kot lahko vidimo iz zgornjih grafov, se z višanjem dimencije delež točk v manj globokih Pareto forntah povečuje. Pri dvodimenzionalni krogli imamo v prvih petih Pareto frontah približno enako točk. V naših poskusih jih je v 1. Pareto fronti celo manj točk kot v 5. Pareto fronti. Pričakujemo lahko, da bi z večanjem števila poskusov, ne glede na število generiranih točk, vse krivulje na grafu postajale vedno bolj linearne. Pri povečanju dimenzije na 3 že opazimo trend, da maksimalno število točk dobimo v 2. oz 3. Pareto fronti. To predvidevamo, da je posledica tega, da v 1. Pareto fronti zajamemo najbolj izstopajočje točke, ki dominirajo velik delež ostalih točk. Pri 2. in 3. pareto fronti pa opazujemo že bolj "zglajeno" množico, zato v pareto fronti dobimo več točk. V treh dimenzijah začenjamo opažati tudi vpliv števila generiranih točk. Z več generiranimi točkami se spremembe kažejo bolj intenzivno. Ko dimenzijo povečamo na 4 ali 5 se nam pokaže očiten maksimum števila točk v 2. Pareto fronti. v teh primerih skoraj vse točke množice zajamemo že v prvih treh Pareto frontah. Do tega po našem mnenju pride, ker imamo v več dimenzijah več kriterijov, po katerih mora biti točka dominirana, da izpade iz Pareto fronte. \break
+Kot lahko vidimo iz zgornjih grafov, se z višanjem dimencije delež točk v manj globokih Pareto forntah povečuje. Pri dvodimenzionalni krogli imamo v prvih petih Pareto frontah približno enako točk. V naših poskusih jih je v 1. Pareto fronti celo manj točk kot v 5. Pareto fronti. Pričakujemo lahko, da bi z večanjem števila poskusov, ne glede na število generiranih točk, vse krivulje na grafu postajale vedno bolj linearne. Pri povečanju dimenzije na 3 že opazimo trend, da maksimalno število točk dobimo v 2. oz 3. Pareto fronti. To predvidevamo, da je posledica tega, da v 1. Pareto fronti zajamemo najbolj izstopajočje točke, ki dominirajo velik delež ostalih točk. Pri 2. in 3. pareto fronti pa opazujemo že bolj "zglajeno" množico, zato v pareto fronti dobimo več točk. V treh dimenzijah začenjamo opažati tudi vpliv števila generiranih točk. Z več generiranimi točkami se spremembe kažejo bolj intenzivno. Ko dimenzijo povečamo na 4 ali 5 se nam pokaže očiten maksimum števila točk v 2. Pareto fronti. v teh primerih skoraj vse točke množice zajamemo že v prvih treh Pareto frontah. Do tega po našem mnenju pride, ker imamo v več dimenzijah več kriterijov, po katerih mora biti točka dominirana, da izpade iz Pareto fronte. \\
 \texttt{Opazimo lahko, da eksperiment potrjuje našo prvo hipotezo.}
 
 \subsection{Drugi del - Vpliv oblike množice}
+V drugem delu si bomo pogledali primerjavo v številu točk v Pareto frontah, če naše testne točke generiramo v enotski krogli ali pa v hiperkocki s stranico dolžine 1. Pri eksperimentu bomo za vsak primer izvedli 20 poskusov. Tokrat bomo poskuse delali z 500 točkami in v 5 dimenzijah. 5 dimenzij smo izbrali, ker se v tem primeru že bolje vidi upad števila točk v globjih Pareto frontah. Ker pa je ta upad tako velik, smo število generiranih točk povečali na 500. S tem smo želeli preprečiti, da bi že v manj kot 5 Pareto frontah zajeli vse točke iz naše testne množice.
+
+\begin{figure}[htbp]
+    \includegraphics[width=130mm]{Slike/Graf2.png}
+\centering
+\end{figure}
+
+Kot lahko vidimo iz zgornjega grafa, do največjega odstopanja pride v 1. Pareto fronti, kjer je pri množici generirani v hiperkocki v povprečju skoraj 30 točk več, kot pri množici generirani v krogli. To je v nasprotju z našimi pričakovanji. Pričakovali smo, da bodo točke, ki bodo v kotu hiperkocke z največjimi vrednostmi v vseh koordinatah dominirale velik del množice in zato zmanjšale število točk v 1. Pareto fronti. \\
+Prav tako je tudi pri pregledu 2. Pareto fronte še vedno več točk pri hiperkocki. Trend se obrne šele v 3. Pareto fronti, od koder obe krivulji enakomerno padata.
+\texttt{Opazimo, da se eksperiment ne sklada z našo drugo hipotezo.}
 
 \subsection{Časovna zahtevnost}
+Naj bo $n$ število generiranih točk, $d$ dimenzija prostora in $m$ globina Pareto front. 
+\begin{itemize}
+    \item Za generiranje točk v krogli uporabljamo \texttt{for} zanko z $n$ ponovitvami. V vsaki ponovitvi opravimo $d$ korakov za generiranje vektorja, $2d + 1$ korakov za računanje norme, $d$ korakov za deljenje vektorja z normo, 1 korak za generiranje dolžine, $2d$ korakov za množnje vektorja z dolžino in radijem in  1 korak za dodajanje točke v množico. \\
+    Pri generiranju točk v hiperkocki prav tako uporabimo $n$ ponovitev zanke. V tem primeru pa v vsaki ponovitvi izvedemo le $d$ korakov za generiranje točke in 1 korak da točko dodamo v množico. \\
+    Torej, pri generiranju podatkov v obeh primerih za izvedbo funkcije potrebujemo $O(nd)$ korakov. 
+    \item Pri funkciji za računanje Pareto fronte uporabimo 2 gnezdeni \texttt{while} funkciji. Iz ustavitvenih pogojev lahko ugotovimo, da bo maksimalno število ponovitev prve zanke $n$, maksimalno število ponovitev druge zanke pa $n-1$. V drugi zanki nato dvakrat uporabimo funkcijo \texttt{dominira}, za katero potrebujemo $d$ korakov. Skupno število korakov je torej:
+    $$
+        n (4 + (n-1) (1 + d + d + 1) + 1 + 1) + 1 = 
+        2n^2d + 2n^2 - 2nd + 4n + 1.
+    $$
+    V skupnem lahko velikostni razred označimo z $O(n^2d)$. V realnosti je število korakov lahko precej manjše, saj lahko v vsaki ponovitvi odstranimo več kot 1 točko.
+    \item Pri računanju m-te Pareto fronte $m$-krat rekurzivno uporabimo funkcijo. Torej je velikostni razred časovne zahtevnosti $O(n^2dm)$. V realnosti je tudi tu zahtevnost manjša, saj v vsaki ponovitvi rekurzije delamo s precej manjšo množico točk.
+\end{itemize}
+ 
 
 
 \end{document}

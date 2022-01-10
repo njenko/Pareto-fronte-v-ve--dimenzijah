@@ -81,7 +81,7 @@ def random_kocka(stevilo_tock, d, a=1): # a stranica kocke, d dimenzija prostora
 # default je nastavljena enotska krogla in enotska kocka (radij=1 oz. stranica=1)
 
 # Primer:
-testne_tocke = random_krogla(200, 3)
+testne_tocke = random_krogla(500, 3)
 
 # Nato lahko na tej množici uporabimo funkcijo izracun_pareto_fronte, ki nam vrne 
 # dvojec 1. pareto fronto in pa množice vseh dominiranih točk, ali pa 
@@ -91,4 +91,7 @@ testne_tocke = random_krogla(200, 3)
 #Primer:
 (pareto, dominirane) = izracun_pareto_fronte(testne_tocke)
 
-pareto_fronte_do_globine_5 = izracun_n_pareto_front(testne_tocke)
+pareto_fronte_do_globine_5 = izracun_n_pareto_front(testne_tocke, 5)
+
+print(pareto)
+print(dominirane)
